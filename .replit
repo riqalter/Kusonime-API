@@ -1,0 +1,1 @@
+run = "clear && /bin/bash -c 'nix-env -iA nixpkgs.nodejs-16_x' && npm start"

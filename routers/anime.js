@@ -1,18 +1,11 @@
 const router = require('express').Router();
 const cheerio = require('cheerio');
 const Axios = require('../tools');
-const cache = require('../database')
-const cacheTime = require('../cacheTime.json')
 
 router.get('/:plug', async (req, res) => {
     try {
 
         const plug = req.params.plug;
-
-        /* Get data from cache*/
-        const caches = await cache.anime.get(`${plug}`)
-        const hit = (Date.now() - (caches?.timestamp || 0) < (cacheTime.anime * 3600000)) ? true : false
-        if (hit) return res.send(caches.data)
 
         const response = await Axios(plug);
         const $ = cheerio.load(response.data);
@@ -77,11 +70,8 @@ router.get('/:plug', async (req, res) => {
         //just delete annoying div
         ress.pop();
         obj.list_download = ress;
-
-
-        await cache.anime.set(`${plug}`, { data: obj, timestamp: Date.now()})
-        const cacheData = cache.anime.get(`${plug}`)
-        res.send(cacheData.data);
+        
+        res.send(obj);
 
     } catch (error) {
 
