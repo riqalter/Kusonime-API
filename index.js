@@ -21,8 +21,8 @@ app.use('/api', async (req, res) => {
     
     res.send({
         status: true,
-        message: 'Kusonime Scrapper',
-        repo: 'KatowProject'
+        message: 'kusoraper api',
+        repo: 'riqalter'
     });
 
 });

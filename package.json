@@ -1,5 +1,5 @@
 {
-  "name": "kusonime-scrapper",
+  "name": "kusoraper-api",
   "version": "1.0.0",
   "description": "kusonime scrapper",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "node index.js",
     "start": "node index.js"
   },
-  "author": "KatowProject",
+  "author": "riqalter",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",

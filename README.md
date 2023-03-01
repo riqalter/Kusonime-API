@@ -1,12 +1,5 @@
 # Kusonime Scrapper
 
-[![Support via Trakteer](https://img.shields.io/badge/Support-me!-green)](https://trakteer.id/katowproject)
-[![License](https://img.shields.io/badge/LICENSE-CC--BY--SA--4.0-green)](https://github.com/KatowProject/Kato-Bot/blob/master/LICENSE)
-[![Server POS](https://img.shields.io/badge/discord-discord.gg%2F3QVwskz-blue)](https://discord.gg/3QVwskz)
-[![Chat](https://img.shields.io/discord/336336077755252738)]()
-
-<p align="center"><img src="https://cdn.discordapp.com/attachments/795771950076133438/795810964040843294/101899459_135497158124648_7045376805259230317_o.jpg" /></p>
-
 ## About
 
 Kusonime Scrapper, Kusonime API
